@@ -1,4 +1,5 @@
 import { Github, Linkedin, Twitter, Mail } from "lucide-react"
+import Image from "next/image"
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/abhay-86", label: "GitHub" },
@@ -18,7 +19,7 @@ export function HeroSection() {
             I build things for the web.
           </h2>
           <p className="text-muted-foreground max-w-xl leading-relaxed text-pretty">
-            I'm a full-stack developer passionate about crafting exceptional digital experiences. Currently focused on
+            I&apos;m a full-stack developer passionate about crafting exceptional digital experiences. Currently focused on
             building accessible, human-centered products that make a difference.
           </p>
           <div className="flex items-center gap-4 pt-4">
@@ -48,10 +49,11 @@ export function HeroSection() {
           <div className="relative w-80 h-80 mx-auto">
             <div className="absolute inset-0 border-2 border-primary rounded-lg translate-x-4 translate-y-4"></div>
             <div className="relative w-full h-full rounded-lg overflow-hidden bg-secondary">
-              <img
+              <Image
                 src="/placeholder-user.jpg"
                 alt="Profile"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                fill
+                className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
               />
               <div className="absolute inset-0 bg-primary/20 hover:bg-transparent transition-all duration-300"></div>
             </div>

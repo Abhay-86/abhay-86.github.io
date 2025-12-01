@@ -54,7 +54,7 @@ export function ExperienceTimeline() {
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center gap-4 mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-            <span className="text-primary font-mono text-xl">02.</span> Where I've Worked
+            <span className="text-primary font-mono text-xl">02.</span> Where I&apos;ve Worked
           </h2>
           <div className="flex-1 h-px bg-border"></div>
         </div>
@@ -65,7 +65,7 @@ export function ExperienceTimeline() {
           <div className="absolute left-4 top-0 bottom-0 w-px bg-border md:hidden"></div>
 
           <div className="space-y-12">
-            {experiences.map((exp, index) => (
+            {experiences.map((exp) => (
               <div
                 key={exp.id}
                 className={`relative flex items-start gap-8 ${exp.side === "left" ? "md:flex-row-reverse" : ""}`}

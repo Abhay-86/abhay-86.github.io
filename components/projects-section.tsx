@@ -1,4 +1,5 @@
 import { Github, ExternalLink, Folder } from "lucide-react"
+import Image from "next/image"
 
 const featuredProjects = [
   {
@@ -68,7 +69,7 @@ export function ProjectsSection() {
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center gap-4 mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-            <span className="text-primary font-mono text-xl">03.</span> Some Things I've Built
+            <span className="text-primary font-mono text-xl">03.</span> Some Things I&apos;ve Built
           </h2>
           <div className="flex-1 h-px bg-border"></div>
         </div>
@@ -85,9 +86,11 @@ export function ProjectsSection() {
                 <a href={project.live} target="_blank" rel="noopener noreferrer">
                   <div className="relative overflow-hidden rounded-lg">
                     <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all duration-300 z-10"></div>
-                    <img
+                    <Image
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
+                      width={800}
+                      height={450}
                       className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-300"
                     />
                   </div>

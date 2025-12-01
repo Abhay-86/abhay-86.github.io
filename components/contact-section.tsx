@@ -4,11 +4,11 @@ export function ContactSection() {
   return (
     <section id="contact" className="py-24 px-6">
       <div className="max-w-2xl mx-auto text-center">
-        <p className="font-mono text-primary text-sm mb-4">05. What's Next?</p>
+        <p className="font-mono text-primary text-sm mb-4">05. What&apos;s Next?</p>
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">Get In Touch</h2>
         <p className="text-muted-foreground leading-relaxed mb-12 text-pretty">
-          I'm currently looking for new opportunities. Whether you have a question, want to collaborate on a project, or
-          just want to say hi, my inbox is always open. I'll try my best to get back to you!
+          I&apos;m currently looking for new opportunities. Whether you have a question, want to collaborate on a project, or
+          just want to say hi, my inbox is always open. I&apos;ll try my best to get back to you!
         </p>
         <a
           href="mailto:abhay@example.com"

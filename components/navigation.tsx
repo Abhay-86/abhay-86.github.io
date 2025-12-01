@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -61,12 +62,15 @@ export function Navigation() {
             </li>
           ))}
         </ul>
-        <a
-          href="/resume.pdf"
-          className="hidden md:inline-flex px-4 py-2 border border-primary text-primary text-sm rounded hover:bg-primary/10 transition-colors"
-        >
-          Resume
-        </a>
+        <div className="hidden md:flex items-center gap-3">
+          <ThemeToggle />
+          <a
+            href="/resume.pdf"
+            className="px-4 py-2 border border-primary text-primary text-sm rounded hover:bg-primary/10 transition-colors"
+          >
+            Resume
+          </a>
+        </div>
       </div>
     </nav>
   )
