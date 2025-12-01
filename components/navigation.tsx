@@ -65,7 +65,7 @@ export function Navigation() {
         <div className="hidden md:flex items-center gap-3">
           <ThemeToggle />
           <a
-            href="/resume.pdf"
+            href="/Abhay.pdf"
             className="px-4 py-2 border border-primary text-primary text-sm rounded hover:bg-primary/10 transition-colors"
           >
             Resume
