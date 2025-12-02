@@ -7,7 +7,6 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Abhay | Developer Portfolio",
   description: "Full-stack developer passionate about building beautiful, functional web experiences.",
-  generator: "v0.app",
   icons: {
     icon: [
       {

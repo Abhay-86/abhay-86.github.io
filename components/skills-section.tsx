@@ -3,16 +3,31 @@ import { ScrollReveal } from "./scroll-reveal"
 const skillCategories = [
   {
     title: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Chakra UI"],
   },
   {
     title: "Backend",
     skills: ["Node.js", "Express", "Python", "PostgreSQL", "MongoDB"],
   },
   {
+  title: "AI Engineering",
+  skills: [
+    "Ollama Deployment",
+    "AI Agent Development",
+    "RAG Pipelines",
+    "Qdrant Vector Database",
+    "n8n Workflow Automation"
+  ],
+},
+
+  {
     title: "Tools & Others",
-    skills: ["Git", "Docker", "AWS", "Figma", "CI/CD"],
+    skills: ["Git", "Docker", "AWS/GCP", "Figma/v0.app", "CI/CD", "GitRunner"],
   },
+  {
+    title: "Languages",
+    skills: ["JavaScript", "C++", "Python", "SQL", "Java"],
+  }
 ]
 
 export function SkillsSection() {
