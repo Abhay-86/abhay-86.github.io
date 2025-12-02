@@ -27,16 +27,19 @@ export function HeroSection() {
           </h1>
 
           <ScrollReveal delay={400}>
-            <h2 className="text-3xl md:text-5xl font-bold text-muted-foreground leading-tight text-balance">
-              I build things for the web.
-            </h2>
-          </ScrollReveal>
+  <h3 className="text-lg md:text-xl italic text-muted-foreground leading-relaxed text-balance">
+    “Most problems aren&apos;t impossible—they&apos;re just waiting for someone to take action. 
+    I&apos;m someone who enjoys being that action-taker.”
+  </h3>
+</ScrollReveal>
+
+
 
           <ScrollReveal delay={500}>
             <p className="text-muted-foreground max-w-xl leading-relaxed text-pretty">
-              I&apos;m a full-stack developer passionate about crafting exceptional digital experiences. Currently focused on
-              building accessible, human-centered products that make a difference.
-            </p>
+  I&apos;m Abhay, a B.Tech CSE graduate from IIT Bhilai and currently working at AuraML. I&apos;m passionate about learning new technologies and building products that can create real impact.
+</p>
+
           </ScrollReveal>
 
           <ScrollReveal delay={600}>

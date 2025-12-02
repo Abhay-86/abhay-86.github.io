@@ -119,4 +119,14 @@
   body {
     @apply bg-background text-foreground;
   }
+  .word-hover span {
+  display: inline-block;
+  transition: transform 0.15s ease, color 0.15s ease;
 }
+
+.word-hover span:hover {
+  transform: scale(1.12);
+  color: var(--primary);
+}
+}
+

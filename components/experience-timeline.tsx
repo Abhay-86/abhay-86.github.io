@@ -34,7 +34,7 @@ const experienceSections = [
         title: "Software Engineer",
         company: "IVY Homes",
         companyUrl: "https://www.linkedin.com/company/ivy-homes/",
-        certificateUrl:"",
+        certificateUrl:"/ivyhomes.pdf",
         description: [
           "Built and deployed large-scale real estate data scraping pipelines.",
           "Scraped property data from MagicBricks, NoBroker, etc., using crawlers with IP rotation.",
@@ -57,7 +57,7 @@ const experienceSections = [
         title: "Software Engineer",
         company: "MAQ Software (MNC)",
         companyUrl: "https://www.linkedin.com/company/maq-software/",
-        certificateUrl:"",
+        certificateUrl:"/maq.png",
         description: [
           "Worked on Azure Data Lakehouse pipelines.",
           "Offloaded large datasets from Azure Databricks into the Lakehouse.",
@@ -105,7 +105,7 @@ const experienceSections = [
         title: "Software Developer Intern",
         company: "Param Innovations",
         companyUrl: "https://paramscience.org/",
-        certificateUrl:"",
+        certificateUrl:"/Param.pdf",
         description: [
           "Worked primarily on the frontend for the Param Innovations web platform.",
           "Designed and implemented responsive UI components and improved overall site layout and user experience.",
