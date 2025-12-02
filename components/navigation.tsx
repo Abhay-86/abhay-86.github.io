@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { ScrollReveal } from "./scroll-reveal"
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -38,43 +37,43 @@ export function Navigation() {
   }, [])
 
   return (
-    <ScrollReveal delay={0}>
-      <nav
-        className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-          isScrolled ? "bg-background/80 backdrop-blur-md border-b border-border" : "bg-transparent",
-        )}
-      >
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="#" className="text-xl font-bold text-primary hover:scale-110 transition-transform">
-            A<span className="text-foreground">.</span>
+    <nav
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        isScrolled ? "bg-background/80 backdrop-blur-md border-b border-border" : "bg-transparent",
+      )}
+    >
+      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="#" className="text-xl font-bold text-primary hover:scale-110 transition-transform">
+          A<span className="text-foreground">.</span>
+        </a>
+        <ul className="hidden md:flex items-center gap-8">
+          {navItems.map((item) => (
+            <li key={item.href}>
+              <a
+                href={item.href}
+                className={cn(
+                  "text-sm uppercase tracking-wider transition-colors hover:text-primary",
+                  activeSection === item.href.slice(1) ? "text-primary" : "text-muted-foreground",
+                )}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div className="hidden md:flex items-center gap-3">
+          <ThemeToggle />
+          <a
+            href="/Abhay.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 border border-primary text-primary text-sm rounded hover:bg-primary hover:text-primary-foreground transition-all transform hover:scale-105"
+          >
+            Resume
           </a>
-          <ul className="hidden md:flex items-center gap-8">
-            {navItems.map((item, index) => (
-              <li key={item.href} style={{ animationDelay: `${100 + index * 50}ms` }}>
-                <a
-                  href={item.href}
-                  className={cn(
-                    "text-sm uppercase tracking-wider transition-colors hover:text-primary",
-                    activeSection === item.href.slice(1) ? "text-primary" : "text-muted-foreground",
-                  )}
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <div className="hidden md:flex items-center gap-3">
-            <ThemeToggle />
-            <a
-              href="/Abhay.pdf"
-              className="px-4 py-2 border border-primary text-primary text-sm rounded hover:bg-primary hover:text-primary-foreground transition-all transform hover:scale-105"
-            >
-              Resume
-            </a>
-          </div>
         </div>
-      </nav>
-    </ScrollReveal>
+      </div>
+    </nav>
   )
 }
