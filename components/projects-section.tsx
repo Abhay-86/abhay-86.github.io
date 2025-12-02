@@ -5,6 +5,17 @@ import { ScrollReveal } from "./scroll-reveal"
 const featuredProjects = [
   {
     id: 1,
+    title: "Job Apply with Bulk Mail",
+    description:
+      "An automated job application platform that scrapes real-time job data from LinkedIn and filters for 24-hour fresh postings. Unlike other platforms, users can create custom email templates and get direct HR contact information for targeted outreach. Features include bulk email automation through Google integration, secure payment processing via Razorpay, and message queuing with RabbitMQ. Successfully generated ₹45k+ revenue through individual client deployments and currently being optimized for public launch.",
+    image: "/JobApply.png",
+    technologies: ["Next.js", "TypeScript", "PostgreSQL", "RabbitMQ", "LinkedIn Scraping", "Google APIs", "Razorpay", "Email Automation"],
+    github: "https://github.com/abhay-86/Learning",
+    live: "",
+    featured: true,
+  },
+  {
+    id: 2,
     title: "Weather Dashboard",
     description:
       "A real-time weather dashboard that displays current temperature, humidity, wind speed, weather conditions, and a 7-day forecast. Users can search any city worldwide, and the dashboard updates instantly using live weather and geocoding APIs.",
@@ -12,18 +23,6 @@ const featuredProjects = [
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Open-Meteo API"],
     github: "https://github.com/abhay-86/weather-dashboard",
     live: "https://abhay-86.github.io/weather-dashboard/",
-    featured: true,
-  },
-
-  {
-    id: 2,
-    title: "Task Management App",
-    description:
-      "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    image: "/placeholder.svg",
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
-    github: "https://github.com",
-    live: "https://example.com",
     featured: true,
   },
   {
@@ -42,18 +41,11 @@ const featuredProjects = [
 const otherProjects = [
   {
     id: 4,
-    title: "Weather Dashboard",
-    description: "A weather dashboard with location-based forecasts and interactive maps.",
-    technologies: ["React", "OpenWeather API", "Mapbox"],
-    github: "https://github.com",
-    live: "https://example.com",
-  },
-  {
-    id: 5,
     title: "Portfolio Template",
     description: "A customizable portfolio template for developers and designers.",
     technologies: ["Next.js", "Framer Motion", "MDX"],
-    github: "https://github.com",
+    github: "https://abhay-86.github.io",
+    live: "https://abhay-86.github.io/",
   },
   {
     id: 6,
