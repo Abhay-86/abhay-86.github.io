@@ -5,15 +5,16 @@ import { ScrollReveal } from "./scroll-reveal"
 const featuredProjects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Weather Dashboard",
     description:
-      "A full-featured e-commerce platform with cart functionality, user authentication, payment processing with Stripe, and an admin dashboard for managing products and orders.",
-    image: "/placeholder.svg",
-    technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Tailwind CSS"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "A real-time weather dashboard that displays current temperature, humidity, wind speed, weather conditions, and a 7-day forecast. Users can search any city worldwide, and the dashboard updates instantly using live weather and geocoding APIs.",
+    image: "/weather.png",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Open-Meteo API"],
+    github: "https://github.com/abhay-86/weather-dashboard",
+    live: "https://abhay-86.github.io/weather-dashboard/",
     featured: true,
   },
+
   {
     id: 2,
     title: "Task Management App",
