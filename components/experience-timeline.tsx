@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink } from "lucide-react"
+import { ScrollReveal } from "./scroll-reveal"
 
 const experiences = [
   {
@@ -52,12 +53,14 @@ export function ExperienceTimeline() {
   return (
     <section id="experience" className="py-24 px-6">
       <div className="max-w-5xl mx-auto">
-        <div className="flex items-center gap-4 mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-            <span className="text-primary font-mono text-xl">02.</span> Where I&apos;ve Worked
-          </h2>
-          <div className="flex-1 h-px bg-border"></div>
-        </div>
+        <ScrollReveal delay={50}>
+          <div className="flex items-center gap-4 mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+              <span className="text-primary font-mono text-xl">02.</span> Where I&apos;ve Worked
+            </h2>
+            <div className="flex-1 h-px bg-border"></div>
+          </div>
+        </ScrollReveal>
 
         <div className="relative">
           {/* Timeline line */}
@@ -65,49 +68,50 @@ export function ExperienceTimeline() {
           <div className="absolute left-4 top-0 bottom-0 w-px bg-border md:hidden"></div>
 
           <div className="space-y-12">
-            {experiences.map((exp) => (
-              <div
-                key={exp.id}
-                className={`relative flex items-start gap-8 ${exp.side === "left" ? "md:flex-row-reverse" : ""}`}
-              >
-                {/* Timeline dot */}
-                <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-primary rounded-full -translate-x-1/2 mt-2 z-10 ring-4 ring-background"></div>
-
-                {/* Content card */}
+            {experiences.map((exp, index) => (
+              <ScrollReveal key={exp.id} delay={200 + index * 100} direction={exp.side === "left" ? "right" : "left"}>
                 <div
-                  className={`ml-12 md:ml-0 md:w-[calc(50%-2rem)] ${
-                    exp.side === "left" ? "md:mr-auto md:pr-8" : "md:ml-auto md:pl-8"
-                  }`}
+                  className={`relative flex items-start gap-8 ${exp.side === "left" ? "md:flex-row-reverse" : ""}`}
                 >
-                  <div className="group p-6 bg-card rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
-                    <span className="text-sm font-mono text-primary">{exp.period}</span>
-                    <h3 className="text-xl font-semibold text-foreground mt-2 group-hover:text-primary transition-colors">
-                      {exp.title}
-                    </h3>
-                    <a
-                      href={exp.companyUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors mt-1"
-                    >
-                      {exp.company}
-                      <ExternalLink className="w-3 h-3" />
-                    </a>
-                    <p className="text-muted-foreground mt-4 leading-relaxed text-sm">{exp.description}</p>
-                    <div className="flex flex-wrap gap-2 mt-4">
-                      {exp.technologies.map((tech) => (
-                        <Badge
-                          key={tech}
-                          variant="secondary"
-                          className="bg-primary/10 text-primary border-0 font-mono text-xs"
-                        >
-                          {tech}
-                        </Badge>
-                      ))}
+                  {/* Timeline dot */}
+                  <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-primary rounded-full -translate-x-1/2 mt-2 z-10 ring-4 ring-background"></div>
+
+                  {/* Content card */}
+                  <div
+                    className={`ml-12 md:ml-0 md:w-[calc(50%-2rem)] ${
+                      exp.side === "left" ? "md:mr-auto md:pr-8" : "md:ml-auto md:pl-8"
+                    }`}
+                  >
+                    <div className="group p-6 bg-card rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
+                      <span className="text-sm font-mono text-primary">{exp.period}</span>
+                      <h3 className="text-xl font-semibold text-foreground mt-2 group-hover:text-primary transition-colors">
+                        {exp.title}
+                      </h3>
+                      <a
+                        href={exp.companyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors mt-1"
+                      >
+                        {exp.company}
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                      <p className="text-muted-foreground mt-4 leading-relaxed text-sm">{exp.description}</p>
+                      <div className="flex flex-wrap gap-2 mt-4">
+                        {exp.technologies.map((tech) => (
+                          <Badge
+                            key={tech}
+                            variant="secondary"
+                            className="bg-primary/10 text-primary border-0 font-mono text-xs"
+                          >
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>

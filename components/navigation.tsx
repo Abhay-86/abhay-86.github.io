@@ -44,7 +44,7 @@ export function Navigation() {
       )}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="text-xl font-bold text-primary">
+        <a href="#" className="text-xl font-bold text-primary hover:scale-110 transition-transform">
           A<span className="text-foreground">.</span>
         </a>
         <ul className="hidden md:flex items-center gap-8">
@@ -66,7 +66,9 @@ export function Navigation() {
           <ThemeToggle />
           <a
             href="/Abhay.pdf"
-            className="px-4 py-2 border border-primary text-primary text-sm rounded hover:bg-primary/10 transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 border border-primary text-primary text-sm rounded hover:bg-primary hover:text-primary-foreground transition-all transform hover:scale-105"
           >
             Resume
           </a>
