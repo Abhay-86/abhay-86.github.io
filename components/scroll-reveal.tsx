@@ -21,7 +21,8 @@ export function ScrollReveal({ children, className, delay = 0, direction = "up" 
       ([entry]) => {
         if (entry.isIntersecting) {
           setTimeout(() => setIsVisible(true), delay)
-          observer.disconnect()
+        } else {
+          setIsVisible(false)
         }
       },
       { threshold: 0.1, rootMargin: "50px" },

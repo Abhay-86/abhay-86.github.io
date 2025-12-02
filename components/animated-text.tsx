@@ -18,7 +18,8 @@ export function AnimatedText({ text, className, delay = 0 }: AnimatedTextProps) 
       ([entry]) => {
         if (entry.isIntersecting) {
           setTimeout(() => setIsVisible(true), delay)
-          observer.disconnect()
+        } else {
+          setIsVisible(false)
         }
       },
       { threshold: 0.1 },
