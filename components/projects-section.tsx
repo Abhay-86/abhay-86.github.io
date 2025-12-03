@@ -33,7 +33,7 @@ const featuredProjects = [
     image: "/placeholder.svg",
     technologies: ["Next.js", "OpenAI API", "Prisma", "Tailwind CSS"],
     github: "https://github.com",
-    live: "https://example.com",
+    live: "",
     featured: true,
   },
 ]
@@ -53,7 +53,7 @@ const otherProjects = [
     description: "Real-time chat app with private messaging and group channels.",
     technologies: ["Socket.io", "Express", "React"],
     github: "https://github.com",
-    live: "https://example.com",
+    live: "",
   },
 ]
 
