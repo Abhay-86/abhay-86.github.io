@@ -30,7 +30,7 @@ const experienceSections = [
       },
       {
         id: 2,
-        period: "2024, September — 2024, March",
+        period: "2024, September — 2025, March",
         title: "Software Engineer",
         company: "IVY Homes",
         companyUrl: "https://www.linkedin.com/company/ivy-homes/",
