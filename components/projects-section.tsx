@@ -16,6 +16,17 @@ const featuredProjects = [
   },
   {
     id: 2,
+    title: "AI-powered RFP management system",
+    description:
+      "An AI-powered RFP management system that helps users create and manage Request for Proposal (RFP) documents using using mistral AI API. User can send RFP to multiple vendors and get their responses in a single dashboard, with scoring and analysis of responses.",
+    image: "/weather.png",
+    technologies: ["Next.js", "TypeScript", "Django-REST-FrameWork", "Mistral AI API", "PostgreSQL", "RabbitMQ", "LinkedIn Scraping", "Google APIs", "Razorpay", "Email Automation"],
+    github: "https://github.com/Abhay-86/Google_email_service",
+    live: "https://youtu.be/GwLuRXdBerw",
+    featured: true,
+  },
+  {
+    id: 3,
     title: "Weather Dashboard",
     description:
       "A real-time weather dashboard that displays current temperature, humidity, wind speed, weather conditions, and a 7-day forecast. Users can search any city worldwide, and the dashboard updates instantly using live weather and geocoding APIs.",
@@ -23,17 +34,6 @@ const featuredProjects = [
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Open-Meteo API"],
     github: "https://github.com/abhay-86/weather-dashboard",
     live: "https://abhay-86.github.io/weather-dashboard/",
-    featured: true,
-  },
-  {
-    id: 3,
-    title: "AI Content Generator",
-    description:
-      "An AI-powered content generation tool that helps users create blog posts, social media content, and marketing copy using OpenAI's GPT API.",
-    image: "/placeholder.svg",
-    technologies: ["Next.js", "OpenAI API", "Prisma", "Tailwind CSS"],
-    github: "https://github.com",
-    live: "",
     featured: true,
   },
 ]
