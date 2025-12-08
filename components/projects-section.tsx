@@ -20,7 +20,7 @@ const featuredProjects = [
     description:
       "An AI-powered RFP management system that helps users create and manage Request for Proposal (RFP) documents using using mistral AI API. User can send RFP to multiple vendors and get their responses in a single dashboard, with scoring and analysis of responses.",
     image: "/RFP.png",
-    technologies: ["Next.js", "TypeScript", "Django-REST-FrameWork", "Mistral AI API", "PostgreSQL", "RabbitMQ", "LinkedIn Scraping", "Google APIs", "Razorpay", "Email Automation"],
+    technologies: ["Next.js", "TypeScript", "Django-REST-FrameWork", "Mistral AI API", "PostgreSQL", "RabbitMQ"],
     github: "https://github.com/Abhay-86/Google_email_service",
     live: "https://youtu.be/GwLuRXdBerw",
     featured: true,
@@ -75,7 +75,7 @@ export function ProjectsSection() {
           {featuredProjects.map((project, index) => (
             <ScrollReveal key={project.id} delay={50 + index * 100} direction={index % 2 === 1 ? "left" : "right"}>
               <div
-                className={`relative grid md:grid-cols-12 gap-4 items-center ${index % 2 === 1 ? "md:text-right" : ""}`}
+                className="relative grid md:grid-cols-12 gap-4 items-center"
               >
                 {/* Project Image */}
                 <div className={`md:col-span-7 ${index % 2 === 1 ? "md:col-start-6" : ""} relative group`}>
@@ -95,9 +95,8 @@ export function ProjectsSection() {
 
                 {/* Project Content */}
                 <div
-                  className={`md:col-span-6 ${
-                    index % 2 === 1 ? "md:col-start-1 md:row-start-1" : "md:col-start-6"
-                  } relative z-20`}
+                  className={`md:col-span-6 ${index % 2 === 1 ? "md:col-start-1 md:row-start-1" : "md:col-start-6"
+                    } relative z-20`}
                 >
                   <p className="font-mono text-primary text-sm mb-2">Featured Project</p>
                   <h3 className="text-2xl font-bold text-foreground mb-4 hover:text-primary transition-colors">
@@ -109,15 +108,13 @@ export function ProjectsSection() {
                     <p className="text-muted-foreground leading-relaxed text-sm">{project.description}</p>
                   </div>
                   <ul
-                    className={`flex flex-wrap gap-3 mb-4 font-mono text-xs text-muted-foreground ${
-                      index % 2 === 1 ? "md:justify-end" : ""
-                    }`}
+                    className="flex flex-wrap gap-3 mb-4 font-mono text-xs text-muted-foreground"
                   >
                     {project.technologies.map((tech) => (
                       <li key={tech}>{tech}</li>
                     ))}
                   </ul>
-                  <div className={`flex gap-4 ${index % 2 === 1 ? "md:justify-end" : ""}`}>
+                  <div className="flex gap-4">
                     {project.github && (
                       <a
                         href={project.github}
@@ -153,7 +150,7 @@ export function ProjectsSection() {
             <h3 className="text-xl font-semibold text-foreground">Other Noteworthy Projects</h3>
           </div>
         </ScrollReveal>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {otherProjects.map((project, index) => (
             <ScrollReveal key={project.id} delay={50 + index * 100}>
