@@ -52,7 +52,7 @@ const otherProjects = [
     title: "Chat Application",
     description: "Real-time chat app with private messaging and group channels.",
     technologies: ["Socket.io", "Express", "React"],
-    github: "https://github.com",
+    github: "",
     live: "",
   },
 ]
