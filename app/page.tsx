@@ -8,6 +8,7 @@ import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { CursorGradient } from "@/components/cursor-gradient"
 import { FloatingParticles } from "@/components/floating-particles"
+import { OpenSourceContributions } from "@/components/OpenSourceContribution"
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       
       <Navigation />
       <HeroSection />
+      <OpenSourceContributions />
       <AboutSection />
       <ExperienceTimeline />
       <ProjectsSection />
