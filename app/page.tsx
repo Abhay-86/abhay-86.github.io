@@ -9,6 +9,7 @@ import { Footer } from "@/components/footer"
 import { CursorGradient } from "@/components/cursor-gradient"
 import { FloatingParticles } from "@/components/floating-particles"
 import { OpenSourceContributions } from "@/components/OpenSourceContribution"
+import CSSChallenge from "@/components/css-challenge"
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <OpenSourceContributions />
+      <CSSChallenge />
       <AboutSection />
       <ExperienceTimeline />
       <ProjectsSection />

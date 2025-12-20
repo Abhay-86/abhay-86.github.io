@@ -37,7 +37,7 @@ export function SkillsSection() {
         <ScrollReveal delay={50}>
           <div className="flex items-center gap-4 mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              <span className="text-primary font-mono text-xl">04.</span> Skills & Technologies
+              <span className="text-primary font-mono text-xl">05.</span> Skills & Technologies
             </h2>
             <div className="flex-1 h-px bg-border"></div>
           </div>
