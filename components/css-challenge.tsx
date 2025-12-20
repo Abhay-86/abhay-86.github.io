@@ -18,7 +18,7 @@ export default function CSSChallenge() {
 
                 <ScrollReveal delay={50}>
                     <p className="text-muted-foreground leading-relaxed mb-12 text-pretty">
-                        For fun I recreate CSS challenge art using Tailwind CSS — check out <a href="https://cssbattle.dev/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary-foreground transition-colors">CSS Battle</a> and my live demos on <a href="https://abhay-86.github.io/css-challenges/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary-foreground transition-colors">GitHub Pages</a>.
+                        For fun I recreate CSS challenge art using Tailwind CSS — check out <a href="https://cssbattle.dev/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary-foreground transition-colors">CSS Battle</a> and my live demos on <a href="https://abhay-86.github.io/css-challenges/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary-foreground transition-colors">GitHub Pages</a> and source code <a href="https://github.com/Abhay-86/css-challenges.git" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary-foreground transition-colors">Github Repo</a>
                     </p>
 
                 </ScrollReveal>
