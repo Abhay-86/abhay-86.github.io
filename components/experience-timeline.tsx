@@ -166,7 +166,7 @@ export function ExperienceTimeline() {
         <ScrollReveal delay={50}>
           <div className="flex items-center gap-4 mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              <span className="text-primary font-mono text-xl">02.</span> Where I&apos;ve Worked
+              <span className="text-primary font-mono text-xl">03.</span> Where I&apos;ve Worked
             </h2>
             <div className="flex-1 h-px bg-border"></div>
           </div>

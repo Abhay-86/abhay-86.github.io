@@ -6,7 +6,7 @@ export function ContactSection() {
     <section id="contact" className="py-24 px-6">
       <div className="max-w-2xl mx-auto text-center">
         <ScrollReveal delay={50}>
-          <p className="font-mono text-primary text-sm mb-4">05. What&apos;s Next?</p>
+          <p className="font-mono text-primary text-sm mb-4">06. What&apos;s Next?</p>
         </ScrollReveal>
 
         <ScrollReveal delay={50}>
