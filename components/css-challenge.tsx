@@ -32,7 +32,7 @@ export default function CSSChallenge() {
                     >
                         <AspectRatio ratio={16 / 9} className="w-full rounded-lg bg-white relative">
                             <Image
-                                src="/css-challenge.png"
+                                src="/css-challenge1.png"
                                 alt="CSS Art Challenge - opens in a new tab"
                                 fill
                                 className="object-contain object-center bg-white"
