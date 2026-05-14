@@ -8,63 +8,58 @@ const experienceSections = [
     items: [
       {
         id: 1,
-        period: "2025, April — Present",
+        period: "Apr 2025 — Present",
         title: "Software Engineer",
-        company: "AuraML (DeepTech)",
-        companyUrl: "https://in.linkedin.com/company/aura-ml",
+        company: "AuraML",
+        companyUrl: "https://www.auraml.ai",
         certificateUrl:"",
         description: [
-          "Hosted core services on office network using static DNS and Wi-Fi bridge deployments.",
-          "Automated cloud deployments with Terraform & Ansible for scalable infra provisioning.",
-          "Built microservices including authentication (email verification), storage system in Rust, and the core WebRTC service.",
-          "Configured API Gateway & Nginx reverse proxy for multi-service routing and TURN server setup.",
-          "Developed backend services in Django and frontend modules in Next.js with GitHub Actions CI/CD.",
-          "Deployed LLM-based solutions including a Sales WhatsApp Bot and automated USDA (3D environment) generation workflows.",
-          "Contributed to architecture integrating C++, Django, and Next.js for performance-critical deeptech systems."
+          "Developed asynchronous task queue for Image-to-3D processing APIs with real-time polling updates.",
+          "Automated GPU instance provisioning using Terraform and Ansible for robotics simulations.",
+          "Built microservices including Rust-based storage service and WebRTC communication service.",
+          "Developed custom Omniverse Isaac Sim extensions using Omniverse SDK for scene and robot configuration.",
+          "Integrated Isaac Sim with Text-to-3D pipelines and ROS2 communication using Zenoh routers.",
+          "Designed centralized CI/CD pipeline with GitHub Actions for multi-microservice deployments.",
+          "Implemented Keycloak-based OAuth 2.0 authentication and SSO via Google and GitHub."
         ],
         technologies: [
-          "Terraform","Ansible","Rust","C++","Django","Next.js","Docker",
-          "GitHub Actions","Nginx","WebRTC","Microservices"
+          "Terraform","Ansible","Rust","C++","Python","Django","Next.js","Docker",
+          "GitHub Actions","Nginx","WebRTC","Microservices","Omniverse SDK","Isaac Sim","ROS2","Zenoh","OAuth 2.0","Keycloak"
         ],
         side: "right" as const,
       },
       {
         id: 2,
-        period: "2024, September — 2025, March",
+        period: "Nov 2024 — Apr 2025",
         title: "Software Engineer",
         company: "IVY Homes",
         companyUrl: "https://www.linkedin.com/company/ivy-homes/",
         certificateUrl:"/ivyhomes.pdf",
         description: [
-          "Built and deployed large-scale real estate data scraping pipelines.",
-          "Scraped property data from MagicBricks, NoBroker, etc., using crawlers with IP rotation.",
-          "Deployed scraping infrastructure on GCP with monitoring & recovery workflows.",
-          "Implemented real-time sync using GCP Pub/Sub and RabbitMQ.",
-          "Integrated ZeptoMail and WATI via Zoho CRM for marketing automation.",
-          "Designed REST APIs and optimized DB schemas.",
-          "Improved microservice scalability, observability, and deployments.",
-          "Gained strong knowledge of API design, networking, distributed systems & large-scale scraping."
+          "Implemented Redis caching for CMS APIs, reducing data retrieval latency by 50%.",
+          "Built backend APIs and automation workflows with Zoho Flow, WATI, and Zepto Mail for 70% of customer messaging.",
+          "Designed and deployed data scraping pipelines on GCP for large-scale property datasets.",
+          "Implemented GCP Pub/Sub messaging for real-time microservice communication.",
+          "Designed scalable APIs and optimized PostgreSQL schemas for Next.js frontend modules."
         ],
         technologies: [
-          "Django (DRF)","Next.js","GCP","Docker","PostgreSQL","Nginx",
-          "Linux","RabbitMQ","CRM Automation","Scraping","IP Rotation"
+          "GCP","Redis","PostgreSQL","Django","Next.js","Pub/Sub","Zoho Flow","WATI","Zepto Mail","Data Pipelines","Python"
         ],
         side: "left" as const,
       },
       {
         id: 3,
-        period: "May — August 2024",
+        period: "May — Oct 2024",
         title: "Software Engineer",
-        company: "MAQ Software (MNC)",
+        company: "MAQ Software",
         companyUrl: "https://www.linkedin.com/company/maq-software/",
         certificateUrl:"/maq.png",
         description: [
-          "Worked on Azure Data Lakehouse pipelines.",
-          "Offloaded large datasets from Azure Databricks into the Lakehouse.",
-          "Cleaned & transformed data using PySpark.",
-          "Built Power BI dashboards and custom visual components."
+          "Worked on Azure Data Lakehouse for large-scale data storage and analytics.",
+          "Cleaned and transformed datasets using PySpark.",
+          "Developed Power BI dashboards and custom visualization cards."
         ],
-        technologies: ["Azure","Databricks","PySpark","Power BI","Data Lakehouse","Python"],
+        technologies: ["Azure","PySpark","Power BI","Data Lakehouse","Python","Databricks"],
         side: "right" as const,
       }
     ]
@@ -75,65 +70,47 @@ const experienceSections = [
     items: [
       {
         id: 101,
-        period: "2023 Dec — 2024 Jan",
-        title: "Full Stack & Security Intern (SIH Runner-Up)",
-        company: "Smart India Hackathon 2023",
-        companyUrl: "https://www.sih.gov.in/",
-        certificateUrl:"",
-        description: [
-          "Secured Runner-Up position in the Smart India Hackathon (SIH) 2023.",
-          "Worked on a cybersecurity problem statement focused on assessing ransomware vulnerability for universities.",
-          "Built a prototype system that performed automated vulnerability analysis using Nmap scans across university IP ranges.",
-          "Developed logic to detect open or vulnerable ports and map them to potential ransomware attack vectors.",
-          "Contributed to the full-stack development of the dashboard used to display vulnerability scores and risk indicators.",
-          "Collaborated with a team to design workflows for scanning, reporting, and risk scoring."
-        ],
-        technologies: [
-          "Nmap",
-          "Cybersecurity",
-          "React",
-          "Node.js",
-          "Networking",
-          "Port Scanning",
-          "Full Stack"
-        ],
-        side: "left" as const,
-      },
-      {
-        id: 102,
-        period: "2023 Summer Break",
-        title: "Software Developer Intern",
+        period: "May — July 2023",
+        title: "Web Developer Intern",
         company: "Param Innovations",
         companyUrl: "https://paramscience.org/",
         certificateUrl:"/Param.pdf",
         description: [
-          "Worked primarily on the frontend for the Param Innovations web platform.",
-          "Designed and implemented responsive UI components and improved overall site layout and user experience.",
-          "Integrated Desmos graphing tools into the website for interactive math visualizations.",
-          "Developed frontend features using modern JavaScript and CSS frameworks.",
-          "Collaborated with backend developers to consume APIs and align frontend behavior with platform logic."
+          "Built responsive static websites with optimization for SEO and performance.",
+          "Developed frontend interfaces using Chakra UI and React hooks for accessible design.",
+          "Optimized state management for faster rendering and user experience."
         ],
-        technologies: ["JavaScript", "HTML", "CSS", "Desmos API", "UI/UX", "Frontend"],
+        technologies: ["React","Chakra UI","JavaScript","HTML/CSS","SEO Optimization"],
+        side: "left" as const,
+      },
+      {
+        id: 102,
+        period: "Aug 2022",
+        title: "Runner-up Developer",
+        company: "Smart India Hackathon 2022 (NTRO)",
+        companyUrl: "https://www.sih.gov.in/",
+        certificateUrl:"",
+        description: [
+          "Developed end-to-end prototype for ransomware detection in university systems during 24-hour hackathon.",
+          "Achieved Runner-up position in the national competition."
+        ],
+        technologies: ["Full Stack", "Security", "Rapid Prototyping"],
         side: "right" as const,
       },
       {
-      id: 103,
-      period: "2023 Winter Semester",
-      title: "Machine Learning Trainee",
-      company: "Amazon ML Summer School",
-      companyUrl: "https://www.aboutamazon.in/news/innovation/amazon-ml-summer-school",
-      certificateUrl:"",
-      description: [
-        "Completed the Amazon Machine Learning Summer School, focused on core ML foundations.",
-        "Studied key ML concepts including supervised learning, KNN, linear regression, logistic regression, and classification techniques.",
-        "Implemented ML algorithms using Python and practiced hands-on model building.",
-        "Gained practical understanding of training, evaluation, bias–variance tradeoff, and data preprocessing.",
-        "Developed a strong foundation in applied ML and its real-world use cases."
-      ],
-      technologies: ["Python", "Machine Learning", "KNN", "Regression", "Classification", "Amazon ML School"],
-      side: "left" as const,
-    },
-
+        id: 103,
+        period: "Jan — Mar 2023",
+        title: "Developer Intern",
+        company: "Agronomist Agrotech (College Startup)",
+        companyUrl: "#",
+        certificateUrl:"",
+        description: [
+          "Worked on Raspberry Pi functionalities and enhancements.",
+          "Contributed to web interface development using Next.js."
+        ],
+        technologies: ["Next.js","Raspberry Pi","IoT","Python"],
+        side: "left" as const,
+      }
     ]
   },
 

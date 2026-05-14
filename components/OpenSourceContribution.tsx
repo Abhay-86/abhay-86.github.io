@@ -8,13 +8,13 @@ export function OpenSourceContributions() {
   const contributions = [
     {
       id: "twenty-16455",
-      title: "Fix: post listing behaviour and UI tweaks",
+      title: "Navigation Overflow Handling & Tooltip Accessibility",
       repo: "twentyhq/twenty",
       pr: "https://github.com/twentyhq/twenty/pull/16455",
-      period: "",
+      period: "2024",
       description:
-        "Submitted a PR addressing a post-listing bug and added tests + minor UI improvements; coordinated with maintainers to land the change.",
-      tech: ["TypeScript", "React", "Testing"],
+        "Contributed UI improvements for navigation overflow handling and tooltip-based accessibility enhancements. Collaborated with maintainers through code reviews and CI validation workflows.",
+      tech: ["TypeScript", "React", "NestJS", "PostgreSQL", "Redis"],
     },
   ]
 
@@ -82,10 +82,10 @@ export function OpenSourceContributions() {
                   <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
                     <span className="text-primary text-sm">★</span>
                   </div>
-                  <span className="text-sm font-medium text-foreground">Open Source</span>
+                  <span className="text-sm font-medium text-foreground">Twenty CRM Contributor</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Contributed to open-source projects focusing on bug fixes, tests, and small feature improvements. Open to collaborating on developer tooling and frontend infra.
+                  Contributed to the open-source Twenty CRM platform built with TypeScript, React, NestJS, PostgreSQL, and Redis. Focused on UI improvements and accessibility enhancements. Actively collaborated with maintainers through code reviews and CI workflows.
                 </p>
               </div>
             </ScrollReveal>

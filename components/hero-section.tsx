@@ -37,7 +37,7 @@ export function HeroSection() {
 
           <ScrollReveal delay={500}>
             <p className="text-muted-foreground max-w-xl leading-relaxed text-pretty">
-  I&apos;m Abhay, a B.Tech CSE graduate from IIT Bhilai and currently working at AuraML. I&apos;m passionate about learning new technologies and building products that can create real impact.
+  I&apos;m Abhay, a Full-Stack Software Engineer specializing in distributed backend systems, AI-powered applications, and robotics simulation infrastructure. Currently at AuraML, building production systems with Django, Next.js, Terraform, and Omniverse Isaac Sim.
 </p>
 
           </ScrollReveal>
