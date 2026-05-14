@@ -8,7 +8,7 @@ const featuredProjects = [
     title: "Atomic – Perplexity-style AI Search Platform",
     description:
       "An AI-powered search platform integrating SearXNG with LLMs for contextual answer generation and web-augmented search. Designed a scalable asynchronous task pipeline using Celery and RabbitMQ for handling long-running AI inference workloads. Implemented containerized deployment using Docker with PostgreSQL for persistent storage and CI/CD pipelines for automated deployments.",
-    image: "/placeholder.svg",
+    image: "/atomic.png",
     technologies: ["Django REST Framework", "Next.js", "PostgreSQL", "Celery", "RabbitMQ", "Docker", "CI/CD", "SearXNG", "LLM"],
     github: "https://github.com/TheAstrelix",
     live: "https://atomic.theastrelix.com/",
@@ -19,7 +19,7 @@ const featuredProjects = [
     title: "Clarity – RAG-based Book Understanding Platform",
     description:
       "A document understanding platform enabling users to upload books and perform contextual semantic search and Q&A using RAG pipelines. Implemented semantic chunking using semantic-chunking library and generated embeddings using self-hosted bge-small-en model with vector storage in Qdrant. Integrated Mistral API and local LLM inference using Ollama for contextual retrieval and document-based question answering.",
-    image: "/placeholder.svg",
+    image: "/clarity.png",
     technologies: ["Django REST Framework", "PostgreSQL", "Celery", "RabbitMQ", "Qdrant", "Mistral LLM", "bge-small-en", "RAG", "Docker"],
     github: "https://github.com/TheAstrelix/seekClarity_backend",
     live: "https://clarity.theastrelix.com/",
@@ -30,7 +30,7 @@ const featuredProjects = [
     title: "VidMentor – YouTube RAG-based Video Understanding System",
     description:
       "A video understanding platform to process YouTube transcripts and generate contextual summaries and Q&A using RAG pipelines. Implemented semantic chunking and embeddings with Qdrant for vector retrieval. Designed retrieval pipelines with query expansion and multi-stage summarization for improved response accuracy. Integrated Mistral API and Ollama with 8K token context windows for transcript summarization.",
-    image: "/placeholder.svg",
+    image: "/vidmentor.png",
     technologies: ["Django REST Framework", "PostgreSQL", "Celery", "RabbitMQ", "Qdrant", "bge-small-en", "RAG", "Docker", "Mistral"],
     github: "https://github.com/TheAstrelix/AskTube_backend",
     live: "https://vidmentor.theastrelix.com/",
