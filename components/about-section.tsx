@@ -20,12 +20,12 @@ export function AboutSection() {
   ]
 
   const highlights = [
+    { number: "1640", label: "Codeforces Expert", iconType: "emoji", icon: "�" },
+    { number: "4⭐", label: "CodeChef Rating (1783)", iconType: "iconify", icon: "simple-icons:codechef" },
     { number: "2+", label: "Years Experience", iconType: "emoji", icon: "💼" },
-    { number: "4⭐", label: "CodeChef Rating", iconType: "iconify", icon: "simple-icons:codechef" },
-    { number: "Pupil", label: "Codeforces Rank", iconType: "iconify", icon: "simple-icons:codeforces" },
-    { number: "300+", label: "LeetCode Problems", iconType: "iconify", icon: "simple-icons:leetcode" },
-    { number: "2nd", label: "SIH 2023", iconType: "emoji", icon: "🏆" },
-    { number: "10+", label: "Projects Built", iconType: "emoji", icon: "🚀" },
+    { number: "Runner-up", label: "Smart India Hackathon", iconType: "emoji", icon: "🏆" },
+    { number: "Rank 1544", label: "Google Kickstart", iconType: "emoji", icon: "🚀" },
+    { number: "Rank 1", label: "College DSA", iconType: "emoji", icon: "⭐" },
   ]
 
  const journeyPoints = [
@@ -33,19 +33,19 @@ export function AboutSection() {
     icon: "🏢",
     title: "Industry Experience",
     description:
-      "I've worked across an MNC, a seed-stage startup, and a pre-seed deep-tech team — experiencing the contrast between structured corporate cycles and the fast, end-to-end ownership of early-stage startups.",
+      "I've worked across an MNC (MAQ Software), seed-stage startup (IVY Homes), and deep-tech company (AuraML) — experiencing structured corporate cycles and fast-paced early-stage ownership.",
   },
   {
     icon: "🔐",
     title: "Diverse Engineering Work",
     description:
-      "Built microservices, WebRTC systems, scraping pipelines, LLM workflows, and cloud-native deployments while exploring AI/ML, cybersecurity, and system design.",
+      "Built microservices, WebRTC systems, robotics simulations, scraping pipelines, LLM workflows, asynchronous task queues, and cloud-native deployments using Terraform, Ansible, and Omniverse Isaac Sim.",
   },
   {
     icon: "⚡",
     title: "What Drives Me",
     description:
-      "I enjoy learning new technologies, working on impactful engineering problems, and shipping production-ready systems that actually get used.",
+      "I enjoy learning new technologies, solving impactful engineering problems, and shipping production-ready systems that scale and deliver real value.",
   },
 ]
 
@@ -82,8 +82,7 @@ export function AboutSection() {
                       Hello! I&apos;m Abhay
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      A software engineer who enjoys building scalable systems, real-time apps, and clean user experiences. 
-                      I work across the full stack with strong focus on backend engineering, cloud infra, and automation.
+                      A Full-Stack Software Engineer specializing in distributed backend systems, AI-powered applications, and robotics simulation infrastructure. I work across the full stack with strong focus on backend engineering, cloud infrastructure automation (Terraform, Ansible), and building scalable microservices.
                     </p>
                   </div>
                 </div>

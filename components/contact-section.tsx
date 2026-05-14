@@ -15,8 +15,7 @@ export function ContactSection() {
 
         <ScrollReveal delay={50}>
           <p className="text-muted-foreground leading-relaxed mb-12 text-pretty">
-            I&apos;m currently looking for new opportunities. Whether you have a question, want to collaborate on a project, or
-            just want to say hi, my inbox is always open. I&apos;ll try my best to get back to you!
+            I&apos;m always interested in connecting with fellow engineers, discussing challenging system design problems, and exploring innovative projects. Feel free to reach out!
           </p>
         </ScrollReveal>
 

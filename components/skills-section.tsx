@@ -2,32 +2,37 @@ import { ScrollReveal } from "./scroll-reveal"
 
 const skillCategories = [
   {
+    title: "Languages",
+    skills: ["Python", "JavaScript", "TypeScript", "C++", "Rust", "SQL"],
+  },
+  {
+    title: "Backend",
+    skills: ["Django", "Django REST Framework", "Node.js", "Express", "NestJS", "Microservices"],
+  },
+  {
     title: "Frontend",
     skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Chakra UI"],
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "Express", "Python", "PostgreSQL", "MongoDB"],
+    title: "DevOps & Cloud",
+    skills: ["Docker", "Kubernetes", "Terraform", "Ansible", "GitHub Actions", "Nginx", "Linux", "GCP", "Azure"],
   },
   {
-  title: "AI Engineering",
-  skills: [
-    "Ollama Deployment",
-    "AI Agent Development",
-    "RAG Pipelines",
-    "Qdrant Vector Database",
-    "n8n Workflow Automation"
-  ],
-},
-
-  {
-    title: "Tools & Others",
-    skills: ["Git", "Docker", "AWS/GCP", "Figma/v0.app", "CI/CD", "GitRunner"],
+    title: "Databases & Caching",
+    skills: ["PostgreSQL", "MongoDB", "Redis", "Qdrant (Vector DB)"],
   },
   {
-    title: "Languages",
-    skills: ["JavaScript", "C++", "Python", "SQL", "Java"],
-  }
+    title: "AI/ML & Data",
+    skills: ["RAG Pipelines", "LLMs (Mistral, Ollama)", "Celery", "RabbitMQ", "PySpark", "semantic-chunking", "bge-small-en"],
+  },
+  {
+    title: "Robotics & Simulation",
+    skills: ["Omniverse Isaac Sim", "Omniverse SDK", "ROS2", "Zenoh", "WebRTC"],
+  },
+  {
+    title: "APIs & Tools",
+    skills: ["REST APIs", "GraphQL", "OAuth 2.0", "Keycloak", "API Gateway", "CI/CD", "SearXNG"],
+  },
 ]
 
 export function SkillsSection() {
